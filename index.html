@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <form action="" class="form">
+      <section class="one">
+        <input placeholder="Поставщик" type="text" class="legalName" />
+        <div class="adress">
+          <input placeholder="Адрес" type="text" class="adress-input" />
+        </div>
+        <div class="phone">
+          тел.
+          <input
+            placeholder="+7(123)456-78-90"
+            type="tel"
+            class="phone-input"
+          />
+        </div>
+      </section>
+      <table class="table">
+        <tr>
+          <td>ИНН <input placeholder="" type="text" class="inn-input" /></td>
+          <td>
+            <p>КПП</p>
+          </td>
+          <td rowspan="2">
+            <p>Сч. №</p>
+          </td>
+          <td rowspan="2">
+            <input placeholder="1234567890" type="text" class="bankAccount" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            Получатель <br />
+            <br />
+            <p class="recipientName">
+              Индивидуальный предприниматель Чернина Елена Алексеевна
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" rowspan="2">
+            Банк получателя <br />
+            <br />
+            <p class="recipientBank">ТОЧКА ПАО БАНКА "ФК ОТКРЫТИЕ", г Москва</p>
+          </td>
+          <td>БИК</td>
+          <td>
+            <input placeholder="" type="text" class="bic" />
+          </td>
+        </tr>
+        <tr>
+          <td>Сч. №</td>
+          <td><input placeholder="" type="text" class="corrAccount" /></td>
+        </tr>
+      </table>
+      <section class="three">
+        <div class="three__header">
+          СЧЁТ №
+          <input placeholder="" type="text" class="orderNumber" /> от
+          <input placeholder="" type="text" class="orderDate" />
+        </div>
+        <div class="three__container">
+          Плательщик <input placeholder="" type="text" class="consumerName" />
+        </div>
+        <div class="three__container">
+          Грузополучатель
+          <input placeholder="" type="text" class="consumerName" />
+        </div>
+      </section>
+
+      <section class="four">
+        <table class="table">
+          <tr>
+            <th>№</th>
+            <th>Наименование товара</th>
+            <th>Цена</th>
+            <th>Кол-во</th>
+            <th>Ед.изм.</th>
+            <th>Сумма</th>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td class="four__container">
+              <input type="text" class="itemName-input" />
+            </td>
+            <td class="itemPrice"><input type="text" class="price-input" /></td>
+            <td class="itemQuantity">
+              <input type="text" class="quantity-input" />
+            </td>
+            <td><input type="text" class="measurements-input" /></td>
+            <td class=""><p class="itemTotal"></p></td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td class="four__container">
+              <input type="text" class="itemName-input" />
+            </td>
+            <td class="itemPrice"><input type="text" class="price-input" /></td>
+            <td class="itemQuantity">
+              <input type="text" class="quantity-input" />
+            </td>
+            <td><input type="text" class="measurements-input" /></td>
+            <td class=""><p class="itemTotal"></p></td>
+          </tr>
+        </table>
+        <button class="four__button-add">+</button>
+      </section>
+      <section class="five">
+        <p class="bold">Итого к оплате: <span class="net-sum"></span></p>
+        <div class="">
+          <p>Руководитель организации, или иное уполномоченное лицо</p>
+          <div class="signature"></div>
+        </div>
+        <div class="">
+          <p>Главный бухгалтер</p>
+          <div class="signature"></div>
+        </div>
+      </section>
+    </form>
+
+    <template class="row-template">
+      <tr>
+        <td></td>
+        <td class="four__container">
+          <input type="text" class="itemName-input" />
+        </td>
+        <td class="itemPrice"><input type="text" class="price-input" /></td>
+        <td class="itemQuantity">
+          <input type="text" class="quantity-input" />
+        </td>
+        <td><input type="text" class="measurements-input" /></td>
+        <td class=""><p class="itemTotal"></p></td></tr
+    ></template>
+    <script src="./index.js"></script>
+  </body>
+</html>
