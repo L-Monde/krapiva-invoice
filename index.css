@@ -154,14 +154,14 @@ th {
   body {
     font-size: 80%;
   }
-  .three__header {
-    font-size: 120%;
-  }
   .four {
     font-size: 90%;
   }
 }
 @media screen and (max-width: 720px) {
+  .three__header {
+    font-size: 110%;
+  }
   .four {
     font-size: 80%;
   }
